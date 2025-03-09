@@ -4,3 +4,7 @@
     box-sizing: border-box;
     font-family: 'League Spartan';
 }
+nav {
+    display: flex;
+    justify-content: space-between;
+}
