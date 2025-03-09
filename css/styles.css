@@ -12,3 +12,7 @@ nav {
     justify-content: space-between;
     font-family: 'League Spartan';
 }
+.nav-logo {
+    width: 5.75rem;
+    margin-left: 0.875rem;
+}
