@@ -55,7 +55,7 @@ nav {
     height: 3px;
     background-color: var(--vinho-principal);
     display: block;
-    transition: width 0.3s ;
+    transition: width 0.3s;
 }
 .links-navegation a:hover::after {
     width: 100%;
