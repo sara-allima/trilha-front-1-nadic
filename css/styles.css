@@ -15,7 +15,6 @@ body {
     background-color: #2C2B2B;
 }
 header {
-    border: 1px solid aqua;
     height: 62px;
 }
 nav {
@@ -27,10 +26,6 @@ nav {
 .nav-logo {
     width: 5.75rem;
     margin: 3% 0 0 0.875rem;
-}
-.img-div {
-    border: 1px solid blue;
-    height: 100%;
 }
 .links-navegation {
     display: flex;
