@@ -9,6 +9,7 @@
     --fonte-paragrafos-desktop: 20px;
     --fonte-h2-desktop: 36px;
     --branco: #FFFFFF;
+    --vinho-principal: #A71B1B;
 }
 body {
     background-color: #2C2B2B;
@@ -47,4 +48,15 @@ nav {
     font-size: var(--fonte-paragrafos-desktop);
     font-weight: 500;
     text-decoration: none;
+}
+.links-navegation a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: var(--vinho-principal);
+    display: block;
+    transition: width 0.4s;
+}
+.links-navegation a:hover::after {
+    width: 100%;
 }
