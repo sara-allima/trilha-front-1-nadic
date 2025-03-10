@@ -14,6 +14,7 @@
 body {
     background-color: #2C2B2B;
 }
+/*nav*/
 header {
     height: 62px;
 }
@@ -55,3 +56,11 @@ nav {
 .links-navegation a:hover::after {
     width: 100%;
 }
+/*nav*/
+
+/*main-session | Seção Sobre*/
+#sobre-session {
+    height: 28.938rem;
+    background: url('../img/bg-main-session.jpg') no-repeat top center/cover;
+}
+/*main-session | Seção Sobre*/
