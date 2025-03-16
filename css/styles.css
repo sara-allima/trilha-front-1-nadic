@@ -5,8 +5,8 @@
     font-family: 'League Spartan', sans-serif;
 }
 :root {
-    --fonte-h1-desktop: 48px;
-    --fonte-paragrafos-desktop: 20px;
+    --fonte-h1-desktop: 60px;
+    --fonte-paragrafos-desktop: 25px;
     --fonte-h2-desktop: 36px;
     --branco: #FFFFFF;
     --vinho-principal: #A71B1B;
@@ -14,6 +14,19 @@
 body {
     background-color: #2C2B2B;
 }
+h1 {
+    color: var(--branco);
+    font-size: var(--fonte-h1-desktop);
+}
+h2 {
+    color: var(--branco);
+    font-size: var(--fonte-h2-desktop);
+}
+p {
+    color: var(--branco);
+    font-size: var(--fonte-paragrafos-desktop);
+}
+/*nav*/
 header {
     height: 62px;
 }
@@ -40,7 +53,7 @@ nav {
 }
 .links-navegation a {
     color: var(--branco);
-    font-size: var(--fonte-paragrafos-desktop);
+    font-size: 20px;
     font-weight: 500;
     text-decoration: none;
 }
@@ -55,3 +68,30 @@ nav {
 .links-navegation a:hover::after {
     width: 100%;
 }
+/*nav*/
+
+/*main-session | Seção Sobre*/
+#sobre-session {
+    height: 28.938rem;
+    background: url('../img/bg-main-session.jpg') no-repeat top center/cover;
+    border: 1px solid var(--branco);
+}
+.container-sobre {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.white-cube-img {
+    width: 27rem;
+    margin-left: 49px;
+}
+.introducao {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.063rem;
+}
+.introducao span {
+    color: var(--vinho-principal);
+}
+/*main-session | Seção Sobre*/
