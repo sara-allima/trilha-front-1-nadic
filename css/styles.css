@@ -109,7 +109,6 @@ nav {
 }
 .container-informacoes {
     width: 80rem;
-    border: 1px solid white;
     margin: 0 auto;
 }
 .container-informacoes h2 {
@@ -180,4 +179,8 @@ nav {
     }
 }
     /*Carousel Configurations*/
+.prizes {
+    text-align: center;
+    margin-bottom: 9px;
+}
 /*informacoes-session | Seção Informações*/
