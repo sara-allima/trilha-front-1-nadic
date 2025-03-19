@@ -11,6 +11,7 @@
     --fonte-h2-desktop: 36px;
     --branco: #FFFFFF;
     --vinho-principal: #A71B1B;
+    --vinho-secundario: #B32A2A;
     --background-color-light: #2C2B2B;
     --background-color-dark: #1E1E1E;
 }
@@ -184,3 +185,28 @@ nav {
     margin-bottom: 9px;
 }
 /*informacoes-session | Seção Informações*/
+/*prize-session | Seção do prêmio*/
+#prize-session {
+    background-color: var(--vinho-principal);
+    height: 18.71rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-prize {
+    background-color: var(--vinho-secundario);
+    width: 45.438rem;
+    height: 15.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+}
+.container-prize h1 {
+    margin-top: 1.313rem;
+}
+.container-prize .money-prize-text {
+    font-size: 128px;
+    margin: 1.5rem 0 1.625rem;
+}
+/*prize-session | Seção do prêmio*/
