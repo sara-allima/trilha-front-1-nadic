@@ -292,4 +292,90 @@ button {
 button:hover {
     background-color: rgba(167, 27, 27, 0.9);
 }
+    /*Dropdown-list*/
+#select-button {
+    margin-top: .5rem;
+    width: 24rem;
+    height: 2.7rem;
+    display: flex;
+    padding: 0.75rem;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--vinho-principal);
+    background-color: transparent;
+}
+#selected-value {
+    color: var(--branco);
+}
+#chevrons svg {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+#chevrons {
+    color: var(--vinho-principal);
+}
+#chevrons [data-lucide="chevron-up"] {
+    display: none;
+}
+#options-view-button:checked + #select-button #chevrons [data-lucide="chevron-down"] {
+    display: none;
+}
+#options-view-button:checked + #select-button #chevrons [data-lucide="chevron-up"] {
+    display: block;
+}
+#category-select {
+    position: relative;
+}
+#options-view-button {
+    all: unset;/*Retira todas as propriedades do elemento checkbox*/
+    position: absolute;
+    inset: 0; /*Significa que seu conteúdo () irá se esticar por todo o seu pai (category-select)*/
+    cursor: pointer;
+    z-index: 3;
+}
+.options {
+    list-style: none;
+    color: var(--branco);
+    margin-top: .2rem;
+    border: 1px solid var(--vinho-principal);
+    display: none;
+}
+.options li {
+    padding: .75rem;
+    max-height: 2.45rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    border-bottom: 1px solid var(--vinho-principal);
+    transition: all 0.2s;
+    position: relative;
+}
+.options svg {
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-left: auto;
+    color: var(--vinho-secundario);
+    display: none;
+}
+.options li:hover,
+.options li:has(input:checked) {
+    background-color: rgba(179, 42, 42, .3);
+}
+.options li:has(input:focus) {
+    outline: 1px solid var(--vinho-secundario);
+}
+.options li:has(input:checked) [data-lucide="check"] {
+    display: block;
+}
+.options input[type="radio"] {
+    all: unset;
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+}
+
+#category-select:has(#options-view-button:checked) + .options { /*Faz lista descer quando está selecionada*/
+    display: block;
+}
+    /*Dropdown-list*/
 /*inscricao-session | Seção de Inscreção*/
