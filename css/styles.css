@@ -238,7 +238,8 @@ label {
     width: 24rem;
 }
 #inscricao-session img {
-    width: 364px;
+    max-width: 400px;
+    align-self: center;
 }
 .inputbox {
     width: 100%;
