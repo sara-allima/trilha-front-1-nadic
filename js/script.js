@@ -1,3 +1,4 @@
+/*Escolha de jogos no forms*/ 
 lucide.createIcons();
 
 let select = document.querySelector('.select'),
@@ -16,3 +17,5 @@ inputsOptions.forEach(input => {
         isMouseOrTouch && optionsViewButton.click();
     })
 })
+/*Escolha de jogos no forms*/ 
+

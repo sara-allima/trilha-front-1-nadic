@@ -15,6 +15,7 @@
     --vinho-secundario: #B32A2A;
     --background-color-light: #2C2B2B;
     --background-color-dark: #1E1E1E;
+    --background-color-popup: rgb(163, 215, 163);
 }
 body {
     background-color: var(--background-color-dark);
@@ -380,3 +381,40 @@ button:hover {
 }
     /*Dropdown-list*/
 /*inscricao-session | Seção de Inscreção*/
+/*Pop-Up*/
+#popup-container {
+    display: inline-block;
+    position: fixed;
+    z-index: 999;
+    top: 30px;
+}
+#popup {
+    background: var(--background-color-popup);
+    border: 1.4px solid rgb(153, 255, 0);
+    padding: 10px 10px 8px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+#popup i{
+    color: var(--branco);
+    font-size: 30px;
+}
+.active { /*Quando o botão for clicado, o display*/
+    display: flex;
+}
+.active .popup {
+    animation: popup .4s;
+}
+
+@keyframes popup {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+/*Pop-Up*/
