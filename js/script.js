@@ -43,5 +43,7 @@ function showPopup() {
     setTimeout(function() { //O pop-up irá desaparecer após os 7 segundos de animação
         popup.classList.remove('active')
     }, 7000)
+    
+    form.reset() // reset é uma função para resetar os inputs do formulário
 }
 /*Pop-Up*/
