@@ -26,7 +26,7 @@ const form = document.getElementById('registration-form')
 form.addEventListener('submit', (event) => {
     event.preventDefault(); //Evita o envio real do formulário
 
-    //Validação
+    //Validação do formulário
     const isValid = form.checkValidity();
     const isGameSelected = Array.from(inputsOptions).some(option => option.checked) // Verifica se algum jogo foi selecionado
     if(isValid && isGameSelected) {
