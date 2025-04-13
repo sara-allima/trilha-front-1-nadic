@@ -19,3 +19,29 @@ inputsOptions.forEach(input => {
 })
 /*Escolha de jogos no forms*/ 
 
+/*Pop-Up*/
+const popup = document.querySelector('#popup-container')
+const form = document.getElementById('registration-form')
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault(); //Evita o envio real do formulário
+
+    //Validação
+    const isValid = form.checkValidity();
+    const isGameSelected = Array.from(inputsOptions).some(option => option.checked) // Verifica se algum jogo foi selecionado
+    if(isValid && isGameSelected) {
+        showPopup();
+    } else if(!isGameSelected){
+        alert('Por favor, selecione um jogo.')
+    } else {
+        alert('Por favor, preencha os dados corretamente.')
+    }
+})
+
+function showPopup() {
+    popup.classList.add('active')
+    setTimeout(function() { //O pop-up irá desaparecer após os 7 segundos de animação
+        popup.classList.remove('active')
+    }, 7000)
+}
+/*Pop-Up*/
