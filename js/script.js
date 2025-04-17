@@ -45,3 +45,14 @@ function showPopup() {
     }, 7000)
 }
 /*Pop-Up*/
+
+/*Menu de Navegação*/
+const barras = document.querySelector('.uil-bars')
+
+barras.addEventListener('click', mostrarMenu)
+function mostrarMenu() {
+    let divMenu = document.createElement('div')
+    divMenu.classList.add('menuMobileOn')
+    document.body.appendChild(divMenu)
+}
+/*Menu de Navegação*/

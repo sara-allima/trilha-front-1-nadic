@@ -58,6 +58,9 @@ nav {
     align-items: center;
     height: 100%;
 }
+.links-navegation .uil-bars{
+    display: none;
+}
 .links-navegation ul {
     display: flex;
     gap: 2.563rem;
@@ -548,6 +551,25 @@ button:hover {
 @media only screen and (max-width: 694px) {
     .container-informacoes img {
         width: 100%
+    }
+}
+@media only screen and (max-width: 667px) { /*Fazer menu de dispositivos móveis*/
+    .links-navegation ul{
+        display: none;
+    }
+    .links-navegation .uil-bars {
+        display: block;
+        color: var(--vinho-principal);
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .menuMobileOn {
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        background-color: var(--background-color-light);
+        width: 50%;
     }
 }
 @media only screen and (max-width: 579px) {
