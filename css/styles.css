@@ -192,19 +192,19 @@ nav {
 /*prize-session | Seção do prêmio*/
 #prize-session {
     background-color: var(--vinho-principal);
-    height: 18.71rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .container-prize {
     background-color: var(--vinho-secundario);
-    width: 45.438rem;
-    height: 15.3rem;
+    max-width: 45.438rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 12px;
+    padding: 0 10.269rem;
+    margin: 3.422rem 0;
 }
 .container-prize h1 {
     margin-top: 1.313rem;
@@ -214,7 +214,7 @@ nav {
     margin: 1.5rem 0 1.625rem;
 }
 /*prize-session | Seção do prêmio*/
-/*inscricao-session | Seção de Inscreção*/
+/*inscricao-session | Seção de Inscrição*/
 label {
     font-size: var(--fonte-label);
     color: var(--branco);
@@ -509,6 +509,17 @@ button:hover {
         font-size: var(--fonte-paragrafos-moveis);
     }
 }
+@media only screen and (max-width: 750px) {
+    .container-prize h1 {
+        font-size:  var(--fonte-h1-moveis);
+    }
+    .container-prize .money-prize-text {
+        font-size: 90px;
+    }
+    .container-prize {
+        padding: 0 5rem;
+    }
+}
 @media only screen and (max-width: 708px) {
     .white-cube-img {
         display: none;
@@ -532,5 +543,19 @@ button:hover {
     }
     .introducao p {
         font-size: var(--fonte-paragrafos-desktop);
+    }
+}
+@media only screen and (max-width: 694px) {
+    .container-informacoes img {
+        width: 100%
+    }
+}
+@media only screen and (max-width: 579px) {
+    .container-prize .money-prize-text {
+        font-size: 70px;
+    }
+    .container-prize {
+        padding: 0 5rem;
+        margin:  2rem 0;
     }
 }
