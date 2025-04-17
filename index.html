@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,19 +12,155 @@
 </head>
 <body>
     <header>
-        <img src="img/Cube League (1) pequena.png" alt="Logo da Cube League">
-        <div class="navegacao">
-            <ul>
-                <li>
-                    <a href="">Sobre</a>
+        <nav>
+            <a href="#top"><img class="nav-logo" src="img/logo_white_nav.png" alt="Logo da Cube League"></a>
+            <div class="links-navegation">
+                <i class="uil uil-bars"></i>
+                <ul>
                     <li>
-                        <a href="">Informações</a>
-                        <li><a href="">Inscreva-se</a></li>
+                        <a href="#sobre-session">Sobre</a>
+                        <li>
+                            <a href="#informacoes-session">Informações</a>
+                            <li><a href="#inscricao-session">Inscreva-se</a></li>
+                        </li>
                     </li>
-                </li>
-            </ul>
-        </div>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <main></main>
+    <main>
+        <section id="sobre-session">
+            <div class="container-sobre">
+                <img class="white-cube-img" src="img/white_cube.png" alt="Cubo com Contorno Branco">
+                <div class="introducao">
+                    <h1>The Cube League</h1>
+                    <p>Cube League é um campeonato de jogos eletrônicos que <span>reúne os melhores competidores</span> em batalhas de alto nível. Com uma estrutura profissional, o torneio desafia jogadores a testarem todas as suas habilidades. Entre para história, <span>entre no CUBE</span>.</p>
+                </div>
+            </div>
+        </section>
+        <section id="informacoes-session">
+            <h1>Informações sobre o evento</h1>
+            <div class="container-informacoes">
+                <div class="box box-1">
+                    <div class="inner-box-informacoes">
+                        <h2>Fases iniciais e finais</h2>
+                        <p>As fases iniciais serão realizadas remotamente, permitindo que jogadores de diversas regiões participem da competição.</p>
+                        <p>Os finalistas se enfrentarão em uma grande final presencial, proporcionando uma experiência imersiva e emocionante para competidores e espectadores.</p>
+                    </div>
+                    <img src="img/Foto-jogadores-Fases-Iniciais.png" alt="">
+                </div>
+                <div class="box box-2">
+                    <div class="galery">
+                        <div class="slider">
+                            <figure>
+                                <img src="img/Escolha-Jogo-Valorant-Foto.png" alt="Personagens fictícios do jogo Valorante, Phoenix e Jet em um fundo vermelho">
+                                <img src="img/escolha-jogo-lol.png" alt="Campeões do jogo League of Legends, Tristane, Ekko, Katarina e Morgana">
+                                <img src="img/escolha-jogo-cs2.png" alt="Agente T Padrão do jogo Counter Strike 2 segurando uma arma">
+                                <img src="img/Escolha-Jogo-Valorant-Foto.png" alt="Personagens fictícios do jogo Valorante, Phoenix e Jet em um fundo vermelho">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="inner-box-informacoes">
+                        <h2>Escolha seu jogo</h2>
+                        <p>Nesta edição, o torneio contará com três dos jogos mais aguardados e populares do momento:</p>
+                        <div class="games">
+                            <p class="games-options bold">Valorant</p>
+                            <p class="games-options bold">League of Legends</p>
+                            <p class="games-options bold">Counter Strike 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box box-3">
+                    <div class="inner-box-informacoes">
+                        <h2>Premiação</h2>
+                        <p>Cada jogo terá sua própria competição dedicada, e a equipe vencedora de cada modalidade será agraciado com:</p>
+                        <p class="bold prizes">Troféu Cube</p>
+                        <p class="bold prizes">Medalhas</p>
+                        <p class="bold prizes">R$20.000</p>
+                    </div>
+                    <img src="img/img-premiacao.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="prize-session">
+            <div class="container-prize">
+                <h1>Ganhe</h1>
+                <h1 class="money-prize-text">R$20.000</h1>
+            </div>
+        </section>
+        <section id="inscricao-session">
+            <h1>Inscreva-se</h1>
+            <div class="container-inscricao">
+                <div class="forms-container">
+                    <form id="registration-form" action="#">
+                        <div class="inputbox">
+                            <i class="uil uil-user"></i>
+                            <input id="nome-completo" type="text" required>
+                            <label for="nome-completo">Nome Completo</label>
+                        </div>
+                        <div class="inputbox">
+                            <i class="uil uil-user-nurse"></i>
+                            <input id="nickname" type="text" required>
+                            <label for="nickname">Nickname</label>
+                        </div>
+                        <div class="inputbox">
+                            <i class="uil uil-envelope"></i>
+                            <input id="email" type="email" required>
+                            <label for="email">E-mail</label>
+                        </div>
+                        <div class="inputbox">
+                            <i class="uil uil-keyhole-square-full"></i>
+                            <input id="senha" type="password" autocomplete="off" required>
+                            <label for="senha">Senha</label>
+                        </div>
+
+                        <div class="select">
+                            <div id="category-select">
+                                <label for="options-view-button">Selecione um Jogo</label>
+                                <input type="checkbox" id="options-view-button">
+
+                                <div id="select-button">
+                                    <div id="selected-value">Jogos Disponíveis</div>
+
+                                    <div id="chevrons">
+                                        <i data-lucide="chevron-down"></i>
+                                        <i data-lucide="chevron-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul class="options">
+                                <li>
+                                    <input type="radio" name="category" value="valorant" data-label="Valorant">
+                                    <span class="label">Valorant</span>
+                                    <i data-lucide="check"></i>
+                                </li>
+                                <li>
+                                    <input type="radio" name="category" value="league-of-legends" data-label="League Of Legends">
+                                    <span class="label">League of Legends</span>
+                                    <i data-lucide="check"></i>
+                                </li>
+                                <li>
+                                    <input type="radio" name="category" value="cs2" data-label="Counter Strike 2">
+                                    <span class="label">Counter Strike 2</span>
+                                    <i data-lucide="check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="submit">Confirmar</button>
+                    </form>
+                </div>
+                <img src="img/the-cube-league-forms.png" alt="Logo The Cube League">
+            </div>
+        </section>
+        <div id="popup-container">
+            <div id="popup">
+                <i class="uil uil-check-square"></i>
+                <p>Inscrição Realizada!</p>
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
