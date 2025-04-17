@@ -52,7 +52,22 @@ const barras = document.querySelector('.uil-bars')
 barras.addEventListener('click', mostrarMenu)
 function mostrarMenu() {
     let divMenu = document.createElement('div')
-    divMenu.classList.add('menuMobileOn')
+    let sobre = document.createElement('a')
+    let informacoes = document.createElement('a')
+    let inscricao = document.createElement('a')
+
+    sobre.innerText = 'Sobre'
+    informacoes.innerText = 'Informacoes'
+    inscricao.innerText = 'Inscreva-se'
+    
     document.body.appendChild(divMenu)
+    divMenu.appendChild(sobre)
+    divMenu.appendChild(informacoes)
+    divMenu.appendChild(inscricao)
+
+    divMenu.classList.add('menuMobileOn')
+    sobre.classList.add('linksMenu')
+    informacoes.classList.add('linksMenu')
+    inscricao.classList.add('linksMenu')
 }
 /*Menu de Navegação*/
