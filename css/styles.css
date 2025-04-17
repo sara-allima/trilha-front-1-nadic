@@ -7,7 +7,9 @@
 }
 :root {
     --fonte-h1-desktop: 60px;
+    --fonte-h1-moveis: 49px;
     --fonte-paragrafos-desktop: 25px;
+    --fonte-paragrafos-moveis: 19px;
     --fonte-h2-desktop: 36px;
     --fonte-label: 20px;
     --branco: #FFFFFF;
@@ -92,11 +94,11 @@ nav {
     gap: 3rem;
 }
 .white-cube-img {
-    width: 27rem;
+    max-width: 27rem;
     margin-left: 49px;
 }
 .introducao {
-    width: 50rem;
+    max-width: 50rem;
     display: flex;
     flex-direction: column;
     gap: 1.063rem;
@@ -451,13 +453,84 @@ button:hover {
     }
     .box-2 .galery {
         order: 2;
+        max-width: 40rem;
     }
     .box-2 .inner-box-informacoes {
         order: 1;
     }
 }
+@media only screen and (max-width: 1101px) {
+    .introducao {
+        margin-right: 30px;
+    }
+}
+@media only screen and (max-width: 1017px) {
+    .white-cube-img {
+        width: 23rem;
+    }
+    #sobre-session {
+        height: 23rem;
+    }
+}
+@media only screen and (max-width: 954px) {
+    .white-cube-img {
+        width: 30%;
+    }
+    .container-sobre {
+        margin: 30px;
+        margin-left: 0;
+    }
+    #sobre-session {
+        height: unset;
+    }
+}
 @media only screen and (max-width: 916px) {
     .inner-box-informacoes {
         max-width: 40rem;
+    }
+}
+@media only screen and (max-width: 957px) {
+    .container-inscricao {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-inscricao img {
+        display: none;
+    }
+    .forms-container {
+        max-width: 28.975rem;
+    }
+}
+@media only screen and (max-width: 865px) {
+    .introducao h1{
+        font-size: var(--fonte-h1-moveis);
+    }
+    .introducao p {
+        font-size: var(--fonte-paragrafos-moveis);
+    }
+}
+@media only screen and (max-width: 708px) {
+    .white-cube-img {
+        display: none;
+    }
+    .introducao {
+        display: flex;
+        align-items: center;
+        margin: unset;
+        max-width: 600px;
+    }
+    .introducao p {
+        text-align: center;
+    }
+    #sobre-session {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .introducao h1 {
+        font-size: var(--fonte-h1-desktop);
+    }
+    .introducao p {
+        font-size: var(--fonte-paragrafos-desktop);
     }
 }
