@@ -11,6 +11,7 @@
     --fonte-paragrafos-desktop: 25px;
     --fonte-paragrafos-moveis: 19px;
     --fonte-h2-desktop: 36px;
+    --fonte-h2-moveis: 27px;
     --fonte-label: 20px;
     --branco: #FFFFFF;
     --vinho-principal: #A71B1B;
@@ -553,7 +554,7 @@ button:hover {
         width: 100%
     }
 }
-@media only screen and (max-width: 667px) { /*Fazer menu de dispositivos móveis*/
+@media only screen and (max-width: 667px) { /*Menu de Barrinhas*/
     .links-navegation ul{
         display: none;
     }
@@ -607,5 +608,31 @@ button:hover {
     }
     .container-prize .money-prize-text {
         font-size: 50px;
+    }
+}
+@media only screen and (max-width: 482px) {
+    h1 {
+        text-align: center;
+        font-size: var(--fonte-h1-moveis);
+    }
+    h2 {
+        font-size: var(--fonte-h2-moveis);
+    }
+    p {
+        font-size: var(--fonte-paragrafos-moveis);
+    }
+    .introducao p {
+        font-size: var(--fonte-paragrafos-moveis);
+    }
+}
+@media only screen and (max-width: 403px) {
+    .container-prize{
+        padding: 0 3rem;
+    }
+    .forms-container form {
+        width: 15rem;
+    }
+    #select-button {
+        width: 15rem;
     }
 }
