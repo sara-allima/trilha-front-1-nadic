@@ -57,9 +57,12 @@ function mostrarMenu() {
     let inscricao = document.createElement('a')
 
     sobre.innerText = 'Sobre'
-    informacoes.innerText = 'Informacoes'
+    informacoes.innerText = 'Informações'
     inscricao.innerText = 'Inscreva-se'
-    
+    sobre.setAttribute('href', '#sobre-session')
+    informacoes.setAttribute('href', '#informacoes-session')
+    inscricao.setAttribute('href', '#inscricao-session')
+
     document.body.appendChild(divMenu)
     divMenu.appendChild(sobre)
     divMenu.appendChild(informacoes)
@@ -68,6 +71,13 @@ function mostrarMenu() {
     divMenu.classList.add('menuMobileOn')
     sobre.classList.add('linksMenu')
     informacoes.classList.add('linksMenu')
-    inscricao.classList.add('linksMenu')
+    inscricao.classList.add('linksMenu'); // Por algum motivo, o menu só sumira se esse ponto e vírgula estiverem aqui
+    
+    // Adiciona o evento para REMOVER O MENU quando um dos links é clicado
+    [sobre, informacoes, inscricao].forEach(link => {
+        link.addEventListener('click', () => {
+            divMenu.remove() // Remove o menu do DOM
+        });
+    });
 }
 /*Menu de Navegação*/
