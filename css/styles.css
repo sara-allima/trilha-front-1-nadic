@@ -567,3 +567,11 @@ button:hover {
         width: 18rem;
     }
 }
+@media only screen and (max-width: 508px) {
+    .container-prize h1 {
+        font-size:  35px;
+    }
+    .container-prize .money-prize-text {
+        font-size: 50px;
+    }
+}
