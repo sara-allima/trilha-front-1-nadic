@@ -7,8 +7,11 @@
 }
 :root {
     --fonte-h1-desktop: 60px;
+    --fonte-h1-moveis: 49px;
     --fonte-paragrafos-desktop: 25px;
+    --fonte-paragrafos-moveis: 19px;
     --fonte-h2-desktop: 36px;
+    --fonte-h2-moveis: 27px;
     --fonte-label: 20px;
     --branco: #FFFFFF;
     --vinho-principal: #A71B1B;
@@ -56,6 +59,9 @@ nav {
     align-items: center;
     height: 100%;
 }
+.links-navegation .uil-bars{
+    display: none;
+}
 .links-navegation ul {
     display: flex;
     gap: 2.563rem;
@@ -92,11 +98,11 @@ nav {
     gap: 3rem;
 }
 .white-cube-img {
-    width: 27rem;
+    max-width: 27rem;
     margin-left: 49px;
 }
 .introducao {
-    width: 50rem;
+    max-width: 50rem;
     display: flex;
     flex-direction: column;
     gap: 1.063rem;
@@ -190,19 +196,19 @@ nav {
 /*prize-session | Seção do prêmio*/
 #prize-session {
     background-color: var(--vinho-principal);
-    height: 18.71rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .container-prize {
     background-color: var(--vinho-secundario);
-    width: 45.438rem;
-    height: 15.3rem;
+    max-width: 45.438rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 12px;
+    padding: 0 10.269rem;
+    margin: 3.422rem 0;
 }
 .container-prize h1 {
     margin-top: 1.313rem;
@@ -212,7 +218,7 @@ nav {
     margin: 1.5rem 0 1.625rem;
 }
 /*prize-session | Seção do prêmio*/
-/*inscricao-session | Seção de Inscreção*/
+/*inscricao-session | Seção de Inscrição*/
 label {
     font-size: var(--fonte-label);
     color: var(--branco);
@@ -421,3 +427,212 @@ button:hover {
     }
 }
 /*Pop-Up*/
+@media only screen and (max-width: 1400px) {
+    .box {
+        gap: 20px;
+    }
+    .container-informacoes {
+        margin: 0 20px
+    }
+}
+@media only screen and (max-width: 1241px) {
+    .box {
+        flex-direction: column;
+        align-items: center;
+        margin: 3.063rem 20px;
+    }
+    .container-informacoes {
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+    .inner-box-informacoes {
+        width: 100%;
+    }
+    .container-informacoes img {
+        width: 40rem;
+        height: 26rem;
+    }
+    .box-2 {
+        display: flex;
+    }
+    .box-2 .galery {
+        order: 2;
+        max-width: 40rem;
+    }
+    .box-2 .inner-box-informacoes {
+        order: 1;
+    }
+}
+@media only screen and (max-width: 1101px) {
+    .introducao {
+        margin-right: 30px;
+    }
+}
+@media only screen and (max-width: 1017px) {
+    .white-cube-img {
+        width: 23rem;
+    }
+    #sobre-session {
+        height: 23rem;
+    }
+}
+@media only screen and (max-width: 954px) {
+    .white-cube-img {
+        width: 30%;
+    }
+    .container-sobre {
+        margin: 30px;
+        margin-left: 0;
+    }
+    #sobre-session {
+        height: unset;
+    }
+}
+@media only screen and (max-width: 916px) {
+    .inner-box-informacoes {
+        max-width: 40rem;
+    }
+}
+@media only screen and (max-width: 957px) {
+    .container-inscricao {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-inscricao img {
+        display: none;
+    }
+    .forms-container {
+        max-width: 28.975rem;
+    }
+}
+@media only screen and (max-width: 865px) {
+    .introducao h1{
+        font-size: var(--fonte-h1-moveis);
+    }
+    .introducao p {
+        font-size: var(--fonte-paragrafos-moveis);
+    }
+}
+@media only screen and (max-width: 750px) {
+    .container-prize h1 {
+        font-size:  var(--fonte-h1-moveis);
+    }
+    .container-prize .money-prize-text {
+        font-size: 90px;
+    }
+    .container-prize {
+        padding: 0 5rem;
+    }
+}
+@media only screen and (max-width: 708px) {
+    .white-cube-img {
+        display: none;
+    }
+    .introducao {
+        display: flex;
+        align-items: center;
+        margin: unset;
+        max-width: 600px;
+    }
+    .introducao p {
+        text-align: center;
+    }
+    #sobre-session {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .introducao h1 {
+        font-size: var(--fonte-h1-desktop);
+    }
+    .introducao p {
+        font-size: var(--fonte-paragrafos-desktop);
+    }
+}
+@media only screen and (max-width: 694px) {
+    .container-informacoes img {
+        width: 100%
+    }
+}
+@media only screen and (max-width: 667px) { /*Menu de Barrinhas*/
+    .links-navegation ul{
+        display: none;
+    }
+    .links-navegation .uil-bars {
+        display: block;
+        color: var(--vinho-principal);
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .menuMobileOn {
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        background-color: var(--background-color-light);
+        width: 50%;
+    }
+    .linksMenu {
+        color: var(--branco);
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .linksMenu:first-child {
+        margin-top: 5rem;
+    }
+}
+@media only screen and (max-width: 579px) {
+    .container-prize .money-prize-text {
+        font-size: 70px;
+    }
+    .container-prize {
+        padding: 0 5rem;
+        margin:  2rem 0;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .forms-container form {
+        width: 18rem;
+    }
+    #select-button {
+        width: 18rem;
+    }
+}
+@media only screen and (max-width: 508px) {
+    .container-prize h1 {
+        font-size:  35px;
+    }
+    .container-prize .money-prize-text {
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 482px) {
+    h1 {
+        text-align: center;
+        font-size: var(--fonte-h1-moveis);
+    }
+    h2 {
+        font-size: var(--fonte-h2-moveis);
+    }
+    p {
+        font-size: var(--fonte-paragrafos-moveis);
+    }
+    .introducao p {
+        font-size: var(--fonte-paragrafos-moveis);
+    }
+}
+@media only screen and (max-width: 403px) {
+    .container-prize{
+        padding: 0 3rem;
+    }
+    .forms-container form {
+        width: 15rem;
+    }
+    #select-button {
+        width: 15rem;
+    }
+}
